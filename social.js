@@ -20,8 +20,7 @@ export default class Social {
     removeFriend(temp) {
         if (temp == this.name)
         {
-            delete this.myFriends
-            return []
+            return this.myFriends=null
         }
         else return this.myFriends
     }
