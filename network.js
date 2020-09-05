@@ -7,6 +7,7 @@ let user2 = new User("Bắc1", "22", "pt", "1999", "2200")
 
 console.log(user1)
 console.log(social.myFriends)
+
 console.log(social.addFriend(user1))
 console.log(social.addFriend(user2))
 

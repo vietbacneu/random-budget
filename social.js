@@ -2,11 +2,15 @@
 export default class Social {
     constructor() {
         this.myFriends =[]
-        this.name=null
+        this.name=[]
     }
     addFriend(temp) {
         if (temp.money > 2000) {
-            this.myFriends.push(temp)
+            let temp1 = {
+                name: temp.name, money: temp.money, age: temp.age, address: temp.address, dateOfBirth: temp.dateOfBirth
+            }
+            this.myFriends.push(temp1)
+            this.name.push(temp.name)
             return this.myFriends
         }
         else {
@@ -18,7 +22,7 @@ export default class Social {
         for (var i = 0; i < this.myFriends.length;i++){
         if (temp == this.myFriends[i].name)
         {   
-            delete  this.myFriends[i]
+            this.myFriends.splice(i)
             return this.myFriends
             }
         }

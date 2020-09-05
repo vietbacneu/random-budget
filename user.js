@@ -5,7 +5,6 @@ export default class User {
         this.dateOfBirth = dateOfBirth
         this.money = money
         this.address = address
-
     }
 
     hello() {
