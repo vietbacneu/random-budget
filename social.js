@@ -22,7 +22,7 @@ export default class Social {
         for (var i = 0; i < this.myFriends.length;i++){
         if (temp == this.myFriends[i].name)
         {   
-            this.myFriends.splice(i)
+            this.myFriends.splice(i,i+1)
             return this.myFriends
             }
         }

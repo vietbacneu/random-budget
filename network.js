@@ -12,5 +12,5 @@ console.log(social.addFriend(user1))
 console.log(social.addFriend(user2))
 
 console.log(social.myFriends)
-console.log(social.removeFriend("Bắc1"))
+console.log(social.removeFriend("Bắc"))
 
