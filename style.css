@@ -1,0 +1,42 @@
+.container{
+    width: 900px;
+    position: relative;
+    top: -440px;
+    left: 500px;
+    display: grid;
+    grid-template: 180px/repeat(3,300px ) ;
+}
+.container div {
+    font-size: 30px;
+    color:blue;
+}
+.container-2{
+    width: 950px;
+    position: relative;
+    top: -400px;
+    left: 500px;
+    display: grid;
+    grid-template: 180px/repeat(2,300px ) ;
+}.container-2 div {
+    font-size: 30px;
+    color:blue;
+}
+
+.random{
+    margin: auto;
+    width: 500px;
+    border:1px solid black;
+    height: 300px;
+    background-color: burlywood;
+display: grid;
+grid-template-rows: 50px 200px 50px;}
+.random button{
+    color:rgb(255, 255, 255);
+    width: 100px;
+    height: 50px;
+    background-color: red;
+margin-left: 200px;
+}
+#randomtext{
+padding-left: 300px;
+}
