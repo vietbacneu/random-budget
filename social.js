@@ -1,27 +1,27 @@
 
 export default class Social {
     constructor() {
-        this.myFriends =null
+        this.myFriends =[]
         this.name=null
     }
     addFriend(temp) {
         if (temp.money > 2000) {
-            this.myFriends = []
             this.myFriends.push(temp)
-            this.name = temp.name
             return this.myFriends
         }
         else {
-            this.myFriends = []
             return this.myFriends
         }
 
     }
     removeFriend(temp) {
-        if (temp == this.name)
-        {
-            return this.myFriends=null
+        for (var i = 0; i < this.myFriends.length;i++){
+        if (temp == this.myFriends[i].name)
+        {   
+            delete  this.myFriends[i]
+            return this.myFriends
+            }
         }
-        else return this.myFriends
+     return this.myFriends
     }
 }
