@@ -53,12 +53,10 @@ function tinhchiphi2() {
         chiphi1.push(sign)
         for (var i = 0; i < chiphi1.length; i++) {
             temp1 = temp1 + parseInt(chiphi1[i].chiphi)
-            document.getElementsByClassName("tenchiphitungcai")[i].innerText = chiphi1[i].chiphi
+            document.getElementsByClassName("tenchiphitungcai")[i].innerText = chiphi1[i].ten
 
             document.getElementsByClassName("chiphitungcai")[i].innerText = chiphi1[i].chiphi
         }
-
-
         document.getElementById("tongchiphi").innerText = temp1
         document.querySelector(".form2").reset()
         document.getElementById("canbang").innerText = tien - temp1

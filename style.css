@@ -23,6 +23,8 @@
 }
 
 .random{
+    position: relative;
+    top:-150px;
     margin: auto;
     width: 500px;
     border:1px solid black;
